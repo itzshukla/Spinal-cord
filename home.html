@@ -1,0 +1,147 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinal Cord</title>
+<style>
+        body {
+             background-color:rgba(190,90,21,0.3); 
+            }
+         p {
+	text-transform: capitalize;
+	text-align:justify;
+	font-size:22;
+}   
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        caption {
+            margin: 10px 0;
+            font-weight: bold;
+            font-size:35;
+            color:green;
+        }
+        hr {
+            border: none;
+            height: 2px;
+        }
+        .red-line {
+            background-color: red;
+        }
+        .blue-line {
+            background-color: blue;
+        }
+        .nav-links img {
+            display: inline-block;
+            margin: 5px;
+        }
+        .slideshow-container {
+            width: 100%; 
+            max-width: 1200px;
+            aspect-ratio: 16 / 9;
+            position: relative;
+            overflow: hidden;
+            margin: auto;
+            border-radius: 10px;
+        }
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;           
+        }
+        @media (max-width: 768px) {
+            .slideshow-container {
+                width: 100%;
+            }
+        }
+        @media (max-width: 480px) {
+            .slideshow-container {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>    <hr class="red-line">
+    <div class="nav-links">
+        <a href="home.html"><img title="HOME" src="https://img.shields.io/badge/⌨ HOME-%23000000.svg?&style=for-the-badge&logoColor=white"></a>
+        <a href="structure.html"><img title="Structure" src="https://img.shields.io/badge/⌨ STRUCTURE-%234ea94b.svg?style=for-the-badge&logoColor=white"></a>
+        <a href="function.html"><img title="Other functions" src="https://img.shields.io/badge/⌨ FUNCTION-%23000000.svg?&style=for-the-badge&logoColor=white"></a>
+        <a href="development.html"><img title="Development" src="https://img.shields.io/badge/⌨ DEVELOPMENT-14836?style=for-the-badge&logoColor=white"></a>
+        <a href="image.html"><img title="Additional images" src="https://img.shields.io/badge/⌨ IMAGES-3670A0?style=for-the-badge&logoColor=ffdd54"></a>
+        <a href="track.html"><img title="tracts" src="https://img.shields.io/badge/⌨ TRACTS-%23E4405F.svg?&style=for-the-badge&logoColor=white"></a>
+    </div>
+    <hr class="blue-line">
+
+<h1 align="center"><font color="red">HUMAN SPINAL CORD</h1></font>
+<h2 align="center">medulla spinalis</h2>
+<h3 align="center"><font color="blue">[ रीढ़ की हड्डी ]</h3></font>
+<!-- Slideshow -->
+    <div class="slideshow-container" id="slideshow1">
+        <div class="slide"><img src="https://files.catbox.moe/nksib9.jpg" alt="Slide 1"></div>
+        <div class="slide"><img src="https://files.catbox.moe/9bxc2z.jpg" alt="Slide 2"></div>
+        <div class="slide"><img src="https://files.catbox.moe/1jx1m8.jpg" alt="Slide 3"></div>
+        <div class="slide"><img src="https://files.catbox.moe/fwqe44.jpg" alt="Slide 4"></div>
+        <div class="slide"><img src="https://files.catbox.moe/mno56r.jpg" alt="Slide 5"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let slideshows = { slideshow1: 0 };
+
+            function showSlides(slideshowId) {
+                let slides = document.querySelectorAll(`#${slideshowId} .slide`);
+                slides.forEach(slide => slide.style.display = "none");
+                slideshows[slideshowId]++;
+                if (slideshows[slideshowId] > slides.length) slideshows[slideshowId] = 1;
+                slides[slideshows[slideshowId] - 1].style.display = "block";
+            }
+
+            function autoSlideShow() {
+                Object.keys(slideshows).forEach(showSlides);
+                setTimeout(autoSlideShow, 3000);
+            }
+
+            autoSlideShow();
+        });
+    </script>
+<p><b>The spinal cord is a long, thin, tubular structure made up of nervous tissue that extends from the medulla oblongata in the lower brainstem to the lumbar region of the vertebral column (backbone) of vertebrate animals. The center of the spinal cord is hollow and contains a structure called the central canal, which contains cerebrospinal fluid. The spinal cord is also covered by meninges and enclosed by the neural arches. Together, the brain and spinal cord make up the central nervous system.</b></p>
+<img src="https://files.catbox.moe/lz6f91.jpg" style="width:100%; max-width:1200px; height:auto; border:3px solid #000;"><br>
+<p><b> The spinal cord shown in yellow extends through most of the length of the vertebral column to connect the brain with peripheral nerves.</b></p>
+
+    <table>
+        <caption>Spinal Cord Details</caption>
+        <tr style="background:orange;">
+            <th>Part of.</th>
+            <th>Central nervous system</th>
+        </tr>
+         <tr style="background:skyblue;">
+            <th>Artery.</th>
+            <th>Spinal artery</th>
+        </tr>
+        <tr style="background:orange;">
+            <th>Vein.</th>
+            <th>Spinal vein</th>
+        </tr>
+        <tr style="background:skyblue;">
+            <th>Latin.</th>
+            <th>medulla spinalis</th>
+        </tr>
+    </table><br>
+<p><b>In humans, the spinal cord is a continuation of the brainstem and anatomically begins at the occipital bone, passing out of the foramen magnum and then enters the spinal canal at the beginning of the cervical vertebrae. The spinal cord extends down to between the first and second lumbar vertebrae, where it tapers to become the cauda equina. The enclosing bony vertebral column protects the relatively shorter spinal cord. It is around 45 cm (18 in) long in adult men and around 43 cm (17 in) long in adult women. The diameter of the spinal cord ranges from 13 mm (1⁄2 in) in the cervical and lumbar regions to 6.4 mm (1⁄4 in) in the thoracic area.</b></p>  
+
+    <h3 align="center">💻 ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ<br> sʜᴀsʜᴀɴᴋ sʜᴜᴋʟᴀ..♡ </h3>
+</body>
+</html>
